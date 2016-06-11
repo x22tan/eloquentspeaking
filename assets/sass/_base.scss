@@ -5,26 +5,34 @@ The Okno - Ultimate Multipurpose HTML5 Template
 
 File:           CSS Base
 Version:        1.0
-Last change:    18/05/15 
+Last change:    18/05/15
 Author:         Suelo
 
 Table of Contents:
 
 	1. Document Setup
 	2. Basic
-	3. Header 
-	4. Content 
+	3. Header
+	4. Content
     5. Footer
-	6. Elements 
-    7. Widgets 
-	8. Animations 
+	6. Elements
+    7. Widgets
+	8. Animations
 
 -------------------------------------------------------------------------------- */
 
-// Import CSS3 Mixins 
+@import "bourbon";
+
+// Import CSS3 Mixins
 @import "compass/css3";
 
-// Import Config 
+@mixin input-placeholder {
+  @include placeholder {
+    @content;
+  }
+}
+
+// Import Config
 @import "config";
 
 // Import Styles
