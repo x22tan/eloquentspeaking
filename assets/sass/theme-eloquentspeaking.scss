@@ -15,6 +15,14 @@ $color-accent-3: #79CCCD;
 
 @import "_base";
 
+.bg-accent {
+  background-color: $color-accent;
+}
+
+.bg-neutral {
+  background-color: $color-neutral;
+}
+
 .text {
   font-size: 16px;
 }

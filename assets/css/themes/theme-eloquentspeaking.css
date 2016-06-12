@@ -6465,5 +6465,11 @@ dl.description-2 {
   100% {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1; } }
+.bg-accent {
+  background-color: #007D8C; }
+
+.bg-neutral {
+  background-color: #FFF6E6; }
+
 .text {
   font-size: 16px; }
