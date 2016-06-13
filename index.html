@@ -46,15 +46,27 @@
 			<img class="logo logo-light" src="assets/img/logo-light.png" alt="Eloquent Speaking">
 		</a>
 
+
 		<nav class="module-group right">
 
-			<!-- Panel -->
-			<div class="module left">
-				<span class="trigger" data-toggle="side-panel"><i class="ti-menu"></i></span>
+			<!-- Primary Menu -->
+			<div class="module menu left">
+				<ul id="nav-primary" class="nav nav-primary">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#testimonials">Testimonials</a></li>
+					<li><a href="#pricing">Pricing</a></li>
+					<!-- <li><a href="#clients">Clients</a></li> -->
+					<li><a href="#contact">Contact</a></li>
+				</ul>
 			</div>
-
 		</nav>
 
+		<!-- Menu Toggle -->
+		<div class="menu-toggle">
+			<a href="#" data-toggle="mobile-menu" class="mobile-trigger"><span><span></span></span></a>
+		</div>
 	</div>
 
 	<!-- Notification Bar -->
@@ -133,7 +145,7 @@
 	</section>
 
 	<!-- Section / About Me -->
-	<section class="section-xs">
+	<section class="section-xs" id="about">
 		<div class="container">
 			<div class="row v-center-items first-col-title">
 				<div class="col-md-3">
@@ -158,7 +170,7 @@
 	</section>
 
 	<!-- Section / Testimonials -->
-	<section class="bg-accent dark">
+	<section class="bg-accent dark" id="testimonials">
 		<div class="container">
 			<h3 class="text-center mb-60">Testimonials</h3>
 			<div class="row">
@@ -234,7 +246,7 @@
  -->
 
 	<!-- Section / Pricing -->
-	<section id="pricing" class="bg-grey">
+	<section id="pricing" class="bg-grey" id="pricing">
 		<div class="container">
 			<h2 class="text-center mb-60">How much does it cost?</h2>
 			<div class="row">
@@ -373,18 +385,13 @@
 
 		<!-- Widget - Links -->
 		<div class="widget widget-links">
-			<ul class="nav nav-panel" data-target="local-scroll">
-				<li><a href="#home">Home</a></li>
-				<li><a href="#services">Services</a></li>
-				<li><a href="#portfolio">Portfolio</a></li>
-				<li><a href="#clients">Clients</a></li>
-				<li><a href="#contact">Contact</a></li>
+
 			</ul>
 		</div>
 
 		<!-- Widget - Follow -->
 		<div class="widget widget-social">
-			<h6 class="text-uppercase text-muted">Connect Us</h6>
+			<h6 class="text-uppercase text-muted">Connect With Us</h6>
 			<a href="www.facebook.com/eloquentspeaking" class="icon icon-square icon-facebook icon-xs" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
 		</div>
 	</div>
