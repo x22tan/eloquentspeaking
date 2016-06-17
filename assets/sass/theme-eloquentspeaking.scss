@@ -31,3 +31,22 @@ $color-accent-3: #79CCCD;
   margin-left: 18px;
 }
 
+#clients {
+  padding-bottom: 40px;
+
+  a {
+    display: inline-block;
+    margin-right: 50px;
+    margin-bottom: 50px;
+
+    @media #{$screen-sm} {
+      margin-bottom: 30px;
+      margin-right: 20px;
+    }
+
+    img {
+      height: 40px;
+    }
+  }
+}
+

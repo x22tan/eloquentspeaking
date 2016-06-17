@@ -6476,3 +6476,12 @@ dl.description-2 {
 
 .about-me-text {
   margin-left: 18px; }
+
+#clients img {
+  height: 40px; }
+  @media only screen and (max-width: 991px) {
+    #clients img {
+      margin-bottom: 50px;
+      margin-right: 0; }
+      #clients img:last-child {
+        margin-bottom: 0; } }
