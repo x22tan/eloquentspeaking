@@ -6489,3 +6489,12 @@ dl.description-2 {
         margin-right: 20px; } }
     #clients a img {
       height: 40px; }
+
+@media only screen and (max-width: 767px) {
+  #testimonials {
+    padding-bottom: 0 !important; } }
+#testimonials .row > div {
+  padding-top: 30px; }
+  @media only screen and (max-width: 991px) {
+    #testimonials .row > div:nth-child(even) {
+      background-color: #006f7d; } }

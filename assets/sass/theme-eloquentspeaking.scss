@@ -50,3 +50,18 @@ $color-accent-3: #79CCCD;
   }
 }
 
+#testimonials {
+  @media #{$screen-xs} {
+    padding-bottom: 0 !important;
+  }
+
+  .row > div {
+    padding-top: 30px;
+
+    &:nth-child(even) {
+      @media #{$screen-sm} {
+        background-color: darken($color-accent, 3%);
+      }
+    }
+  }
+}
