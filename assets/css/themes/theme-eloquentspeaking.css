@@ -6504,3 +6504,6 @@ a:hover {
 
 .dark a:hover {
   color: #79CCCD; }
+
+h5 {
+  line-height: 1.5; }
