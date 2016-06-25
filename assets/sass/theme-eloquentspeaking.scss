@@ -65,3 +65,11 @@ $color-accent-3: #79CCCD;
     }
   }
 }
+
+a:hover {
+  color: $color-primary;
+}
+
+.dark a:hover {
+  color: $color-accent-3;
+}

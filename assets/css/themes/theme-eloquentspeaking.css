@@ -6498,3 +6498,9 @@ dl.description-2 {
   @media only screen and (max-width: 991px) {
     #testimonials .row > div:nth-child(even) {
       background-color: #006f7d; } }
+
+a:hover {
+  color: #cf474f; }
+
+.dark a:hover {
+  color: #79CCCD; }
