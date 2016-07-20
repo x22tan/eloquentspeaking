@@ -5828,7 +5828,7 @@ select.form-control {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1; }
 
-/* Typography 
+/* Typography
 ----------------------------------------------------------*/
 /* Fonts */
 .font-secondary {
@@ -6465,14 +6465,101 @@ dl.description-2 {
   100% {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1; } }
+/* Layout */
+section,
+.section {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+section.section-lg,
+.section.section-lg {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+@media only screen and (max-width: 991px) {
+  section,
+  .section {
+    padding: 50px 10px; }
+
+  section.section-lg,
+  .section.section-lg {
+    padding: 80px 10px; } }
+@media only screen and (max-width: 767px) {
+  section,
+  .section {
+    padding: 30px 10px; }
+
+  section.section-lg,
+  .section.section-lg {
+    padding: 50px 10px; } }
 .bg-accent {
   background-color: #007D8C; }
 
 .bg-neutral {
   background-color: #FFF6E6; }
 
+/* Typography */
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  line-height: 1.3; }
+
+@media only screen and (max-width: 991px) {
+  h1 {
+    font-size: 38px; }
+
+  h2 {
+    font-size: 30px; }
+
+  h3 {
+    font-size: 26px; }
+
+  h5 {
+    font-size: 18px; } }
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 28px; }
+
+  h2 {
+    font-size: 22px; }
+
+  h3 {
+    font-size: 20px; }
+
+  h5 {
+    font-size: 14px; } }
 .text {
   font-size: 16px; }
+  @media only screen and (max-width: 767px) {
+    .text {
+      margin-bottom: 10px; } }
+
+a:hover {
+  color: #cf474f; }
+
+.dark a:hover {
+  color: #79CCCD; }
+
+/* Specific Sections */
+@media only screen and (max-width: 991px) {
+  body.header-absolute #content section:first-child {
+    padding: 140px 40px; } }
+@media only screen and (max-width: 767px) {
+  body.header-absolute #content section:first-child {
+    padding: 90px 10px 60px 10px; } }
+#services h3 {
+  margin-bottom: 60px; }
+  @media only screen and (max-width: 991px) {
+    #services h3 {
+      margin-bottom: 20px; } }
+@media only screen and (max-width: 991px) {
+  #services .icon.icon-circle.icon-lg {
+    margin-top: 20px;
+    height: 80px;
+    width: 80px; } }
 
 .about-me-text {
   margin-left: 18px; }
@@ -6483,7 +6570,7 @@ dl.description-2 {
     display: inline-block;
     margin-right: 50px;
     margin-bottom: 50px; }
-    @media only screen and (max-width: 991px) {
+    @media only screen and (max-width: 767px) {
       #clients a {
         margin-bottom: 30px;
         margin-right: 20px; } }
@@ -6492,18 +6579,17 @@ dl.description-2 {
 
 @media only screen and (max-width: 767px) {
   #testimonials {
-    padding-bottom: 0 !important; } }
+    padding: 30px 0 0 0 !important; } }
 #testimonials .row > div {
   padding-top: 30px; }
   @media only screen and (max-width: 991px) {
     #testimonials .row > div:nth-child(even) {
       background-color: #006f7d; } }
+@media only screen and (max-width: 767px) {
+  #testimonials .row:nth-child(2) > div:first-child {
+    padding-top: 0; } }
 
-a:hover {
-  color: #cf474f; }
-
-.dark a:hover {
-  color: #79CCCD; }
-
-h5 {
-  line-height: 1.5; }
+@media only screen and (max-width: 767px) {
+  #contact .icon.icon-primary {
+    font-size: 32px;
+    margin-bottom: 0; } }

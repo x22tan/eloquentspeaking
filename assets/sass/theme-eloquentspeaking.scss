@@ -15,6 +15,44 @@ $color-accent-3: #79CCCD;
 
 @import "_base";
 
+/* Layout */
+
+section,
+.section {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+section.section-lg,
+.section.section-lg {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media #{$screen-sm} {
+  section,
+  .section {
+    padding: 50px 10px;
+  }
+
+  section.section-lg,
+  .section.section-lg {
+    padding: 80px 10px;
+  }
+}
+
+@media #{$screen-xs} {
+  section,
+  .section {
+    padding: 30px 10px;
+  }
+
+  section.section-lg,
+  .section.section-lg {
+    padding: 50px 10px;
+  }
+}
+
 .bg-accent {
   background-color: $color-accent;
 }
@@ -23,46 +61,57 @@ $color-accent-3: #79CCCD;
   background-color: $color-neutral;
 }
 
+/* Typography */
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  line-height: 1.3;
+}
+
+@media #{$screen-sm} {
+  h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+}
+
+@media #{$screen-xs} {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+}
+
 .text {
   font-size: 16px;
-}
 
-.about-me-text {
-  margin-left: 18px;
-}
-
-#clients {
-  padding-bottom: 40px;
-
-  a {
-    display: inline-block;
-    margin-right: 50px;
-    margin-bottom: 50px;
-
-    @media #{$screen-sm} {
-      margin-bottom: 30px;
-      margin-right: 20px;
-    }
-
-    img {
-      height: 40px;
-    }
-  }
-}
-
-#testimonials {
   @media #{$screen-xs} {
-    padding-bottom: 0 !important;
-  }
-
-  .row > div {
-    padding-top: 30px;
-
-    &:nth-child(even) {
-      @media #{$screen-sm} {
-        background-color: darken($color-accent, 3%);
-      }
-    }
+    margin-bottom: 10px;
   }
 }
 
@@ -74,6 +123,98 @@ a:hover {
   color: $color-accent-3;
 }
 
-h5 {
-  line-height: 1.5;
+/* Specific Sections */
+
+// Hero
+
+@media #{$screen-sm} {
+  body.header-absolute #content section:first-child {
+    padding: 140px 40px;
+  }
+}
+
+@media #{$screen-xs} {
+  body.header-absolute #content section:first-child {
+    padding: 90px 10px 60px 10px;
+  }
+}
+
+// Services
+
+#services {
+  h3 {
+    margin-bottom: 60px;
+
+    @media #{$screen-sm} {
+      margin-bottom: 20px;
+    }
+  }
+
+  .icon.icon-circle.icon-lg {
+    @media #{$screen-sm} {
+      margin-top: 20px;
+      height: 80px;
+      width: 80px;
+    }
+  }
+}
+
+// About
+
+.about-me-text {
+  margin-left: 18px;
+}
+
+// Clients
+
+#clients {
+  padding-bottom: 40px;
+
+  a {
+    display: inline-block;
+    margin-right: 50px;
+    margin-bottom: 50px;
+
+    @media #{$screen-xs} {
+      margin-bottom: 30px;
+      margin-right: 20px;
+    }
+
+    img {
+      height: 40px;
+    }
+  }
+}
+
+// Testimonials
+
+#testimonials {
+  @media #{$screen-xs} {
+    padding: 30px 0 0 0 !important;
+  }
+
+  .row > div {
+    padding-top: 30px;
+
+    &:nth-child(even) {
+      @media #{$screen-sm} {
+        background-color: darken($color-accent, 3%);
+      }
+    }
+  }
+
+  .row:nth-child(2) > div:first-child {
+    @media #{$screen-xs} {
+      padding-top: 0;
+    }
+  }
+}
+
+#contact {
+  .icon.icon-primary {
+    @media #{$screen-xs} {
+      font-size: 32px;
+      margin-bottom: 0;
+    }
+  }
 }
